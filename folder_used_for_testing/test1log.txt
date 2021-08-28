@@ -1,0 +1,3 @@
+Warning :-
+Warning at Line 0 : Label with name "label" not used but declared
+Warning at Line 12 : HALT instruction not found .

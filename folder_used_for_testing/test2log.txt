@@ -1,0 +1,12 @@
+Failed to assemble!
+Errors :-
+Error at Line 4 : Duplicate label definition of "label"
+Error at Line 5 : No such label as "nonesuch" has been declared
+Error at Line 6 : Not a number or a valid Label
+Error at Line 7 : Missing Operand
+Error at Line 8 : Unexpected Operand
+Error at Line 9 : Extra operand on end of line 
+Error at Line 9 : Not a number or a valid Label
+Error at Line 10 : Bogus Label Name 
+Error at Line 11 : Bogus Mnemonic
+Error at Line 12 : Bogus Mnemonic
