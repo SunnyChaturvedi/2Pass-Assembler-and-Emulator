@@ -1,16 +1,16 @@
 # 2Pass-Assembler-and-Emulator
 **A 2 pass Assembler & Emulator for a custom assembly language called SIMPLE.**<br/>
-(SIMPLE has 2 registers, program counter, stack counter and selected mnemonics which perform various operations)
+SIMPLE has 2 registers , 1 program counter , 1 stack counter <br/> & selected instruction mnemonics which perform various operations.
 &nbsp;
 
 ### The Assembler
-Converts the given assembly code to machine code for emulator to run. In<br/>
+Converts the given assembly code to machine code for emulator to run.<br/>
 Pass1 : It checks for various syntax errors.<br/>
 Pass2 : It obtains the machine code (*the object file*) <br/>
 
 It also generates <br/>
-*Listing file* : A human readable file showing what value is  stored at each address.
-_Log file_ : Contains the warnings and errors(if any).
+*Listing file* : A human readable file showing what value is  stored at each address.<br/>
+_Log file_ : Contains the warnings and errors(if any).<br/>
 
 
 ### The Emulator
