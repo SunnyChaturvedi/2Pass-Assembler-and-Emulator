@@ -1,0 +1,161 @@
+/*****************************************************************************
+TITLE: Claims                                                                                                                               
+AUTHOR: Sunny Chaturvedi
+ID: 1801CS54 
+
+Declaration of Authorship
+This txt file, claims.txt, is part of the assignment of CS321 - CS322 at the 
+department of Computer Science and Engg, IIT Patna . 
+*****************************************************************************/
+
+==========
+Files:
+==========
+*All the files I submitted, asm.cpp and Assembler_Claims.txt, have my name and student id at the start, along with a declaration of authorship.
+
+The evidence for Assembler including the output files from the four test examples given (test1 to test4) and bubblesort has also been uploaded. They are test1(3 output files), test2(1 output file), test3(3 output files), 
+test4(3 output files) and bubblesort(3 output files). 
+
+All the test files have been tested and work properly. 
+
+
+=========================
+Compilation instructions:
+=========================
+    
+Windows:
+    g++ asm.cpp -o asm
+    asm <insert_file_name>.asm
+Ubuntu:
+    g++ asm.cpp -o asm
+    ./asm <insert_file_name>.asm
+
+Footnote:
+    * Input files(the .asm file) must be present in the same folder where the code is executed
+    * Ouput files -> if there are no errors then <insert_file_name>.o file and <insert_file_name>.l files will be produced in same folder.
+
+
+
+=============================
+Program format and structure:
+=============================
+
+The assembler:
+    
+    * Written in C++ Language
+
+    * Every instruction (including the SET instruction) is implemented.
+
+    * It contains a table of instruction names and expected operands.
+
+    * asm.cpp is the main and only file of my assembler
+
+    * It is a 2 pass assembler (implemented in asm.cpp)
+    
+    * outputs the required correct information in the form of 3 things :
+       *  the errors and warnings on terminal as well as log file if not assembled properly.
+       *  .l file for listing 
+       *  .o file for machine code 
+
+    * All important errors are diagnosed along with thier line numbers ( unknown instruction , no such label , duplicate label )
+
+    * Along with errors it also generates Warnings whenever there is a label declared but has not been used in the code.
+  
+    * Comments or self descriptive variable names have been used.
+
+    * Advanced Listing File gets generated that is bytes of instruction along with that instructions mnemonics .
+
+    * The Assembler is capable of understanding the values given in decimal , octal or hexadecimal format.
+
+    * SET instruction is also implemented. The breakage of SET into different instructions for implementation can be found in the code along with comments.
+
+    * Assembler successfully skips empty lines and comments
+
+
+
+===========================================
+Testing: (using a windows machine)
+===========================================
+The assembler:
+
+I have tested  6 examples(1 example from doc , 4 test files and bubblesort) shown as bellow. The errors only occurred in the file test2.asm and the program immediately stopped on the second pass displaying errors in the terminal window.
+
+The others were tested without any errors detected and produced listing file and machine readable object file, for each example.
+
+
+1)
+#Input: asm test1.asm
+#Output: 
+Warning at Line 0 : Label with name "label" not used but declared
+Warning at Line 12 : HALT instruction not found .
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Compiled without errors!!!
+Logs generated in: test1log.txt
+Machine code generated in: test1.o
+Listing generated in: test1.l
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+2)
+#Input: asm test2.asm
+#Output: 
+Failed to Assemble!!
+Error at Line 4 : Duplicate label definition of "label"
+Error at Line 5 : No such label as "nonesuch" has been declared
+Error at Line 6 : Not a number or a valid Label
+Error at Line 7 : Missing Operand
+Error at Line 8 : Unexpected Operand
+Error at Line 9 : Extra operand on end of line
+Error at Line 9 : Not a number or a valid Label
+Error at Line 10 : Bogus Label Name
+Error at Line 11 : Bogus Mnemonic
+Error at Line 12 : Bogus Mnemonic                                                                                      
+
+3)
+#Input: asm test3.asm
+#Output: 
+Warning at Line 12 : HALT instruction not found .
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Compiled without errors!!!
+Logs generated in: test3log.txt
+Machine code generated in: test3.o
+Listing generated in: test3.l
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+4)
+#Input: asm test4.asm
+#Output: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Compiled without errors!!!
+Logs generated in: test4log.txt
+Machine code generated in: test4.o
+Listing generated in: test4.l
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+5)
+#Input: asm test.asm
+#Output: 
+Warning at Line 12 : HALT instruction not found .
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Compiled without errors!!!
+Logs generated in: testlog.txt
+Machine code generated in: test.o
+Listing generated in: test.l
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+6)
+#Input: asm bubblesort.asm
+#Output: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Compiled without errors!!!
+Logs generated in: bubblesortlog.txt
+Machine code generated in: bubblesort.o
+Listing generated in: bubblesort.l
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+7)
+#Input: asm false_test.asm
+#Output: 
+Error in Opening Input file
+
