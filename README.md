@@ -32,10 +32,9 @@ NOTE2: The run instructions and project design are mentioned in claims.txt files
 
 ### Sample Assembler Run
 
-<img src="https://github.com/SunnyChaturvedi/2Pass-Assembler-and-Emulator/blob/main/test_run_pics/testing_pic1.jpg" alt="3"/>
+<img src="https://github.com/SunnyChaturvedi/2Pass-Assembler-and-Emulator/blob/main/test_run_pics/asm_test.png" alt="3"/>
 
-<img src="https://github.com/SunnyChaturvedi/2Pass-Assembler-and-Emulator/blob/main/test_run_pics/testing_pic2.jpg" alt="4" />
 
 ### Sample Emulator Run
 
-<img src="https://github.com/SunnyChaturvedi/2Pass-Assembler-and-Emulator/blob/main/test_run_pics/testing_pic3.jpg" alt="5" />
+<img src="https://github.com/SunnyChaturvedi/2Pass-Assembler-and-Emulator/blob/main/test_run_pics/emu_test.png" alt="5" />
