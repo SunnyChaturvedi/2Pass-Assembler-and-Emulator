@@ -8,9 +8,9 @@ Converts the given assembly code to machine code for emulator to run.<br/>
 Pass1 : It checks for various syntax errors.<br/>
 Pass2 : It obtains the machine code (*the object file*) <br/>
 
-It also generates <br/>
-*Listing file* : A human readable file showing what value is  stored at each address.<br/>
-_Log file_ : Contains the warnings and errors(if any).<br/>
+It also generates- <br/>
+1) *Listing file* : A human readable file showing what value is  stored at each address.<br/>
+2) _Log file_ : Contains the warnings and errors(if any).<br/>
 
 
 ### The Emulator
